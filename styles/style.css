@@ -295,5 +295,8 @@ body {
   .content .q-n-a #q5:hover p {
     color: #f47c57;
   }
+  .content .q-n-a span {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
