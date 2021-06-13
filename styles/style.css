@@ -123,11 +123,33 @@ body {
   right: 12px;
 }
 
+.content .q-n-a .answerstyle {
+  display: block;
+}
+
+.content .q-n-a .paragraphstyle {
+  font-weight: bold;
+}
+
+.content .q-n-a .arrowstyle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .content .q-n-a hr {
   width: 100%;
   border: none;
   background: #e7e7e9;
   height: 1px;
+}
+
+.content .q-n-a p {
+  margin: 0;
+  padding: 0;
+}
+
+.content .q-n-a span {
+  margin: 0;
 }
 
 .content .q-n-a #q1:hover {
@@ -272,23 +294,6 @@ body {
   }
   .content .q-n-a #q5:hover p {
     color: #f47c57;
-  }
-  .content .q-n-a .answerstyle {
-    display: block;
-  }
-  .content .q-n-a .paragraphstyle {
-    font-weight: bold;
-  }
-  .content .q-n-a .arrowstyle {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .content .q-n-a p {
-    margin: 0;
-    padding: 0;
-  }
-  .content .q-n-a span {
-    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

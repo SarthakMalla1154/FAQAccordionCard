@@ -81,11 +81,30 @@ body{
             // float: right;
         }
 
+        .answerstyle{ //this is for the the answer
+            display: block;
+        }
+        .paragraphstyle{
+            font-weight: bold;
+        }
+        .arrowstyle{
+            transform: rotate(180deg);
+        }
+        
+
         hr{
             width: 100%;
             border: none;
             background: hsl(240, 5%, 91%);
             height: 1px;
+        }
+
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            margin: 0;
         }
         @import "./hover";
     }
@@ -145,23 +164,6 @@ body{
                 margin-left: 100px;
             }
             @import "./hover";
-
-            .answerstyle{ //this is for the the answer
-                display: block;
-            }
-            .paragraphstyle{
-                font-weight: bold;
-            }
-            .arrowstyle{
-                transform: rotate(180deg);
-            }
-            p{
-                margin: 0;
-                padding: 0;
-            }
-            span{
-                margin: 0;
-            }
         }
     }
 }
