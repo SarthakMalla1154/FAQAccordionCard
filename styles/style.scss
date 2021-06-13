@@ -1,0 +1,167 @@
+@mixin centerFlex($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include centerFlex(column);
+}
+.card{
+    background-color: white;
+    width: 90%;
+    border-radius: 25px;
+    // height: 400px;
+    @include centerFlex(column);
+    position: relative;
+    // z-index: 1;
+    .img1{
+        background-image: url("../images/illustration-woman-online-mobile.svg");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 185px;
+        position: absolute;
+        top: -107px;
+        // z-index: 2;
+    }
+    .img2{
+        background-image: url("../images/bg-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 185px;
+        position: absolute;
+        top: 0px;
+        right: -4px;
+    }
+}
+.content{
+    @include centerFlex(column);
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 117px;
+    margin-bottom: 40px;
+    width: 85%;
+    .faq-header{
+        font-weight: lighter;
+        color: hsl(238, 29%, 16%);
+    }
+    .q-n-a{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        // position: relative;
+        margin: 0;
+        width: 100%;
+        color:hsl(237, 12%, 33%);
+
+        .question{
+            font-size: 14px;
+            font-weight: lighter;
+            margin: 13px 0;
+            position: relative;
+        }
+
+        .answer{
+            margin-top: 12px;
+            padding-right: 30px;
+            display: none;
+            color: hsl(240, 6%, 50%);
+        }
+
+        .arrow{
+            position: absolute;
+            top: 4px;
+            right: 12px;
+            // float: right;
+        }
+
+        hr{
+            width: 100%;
+            border: none;
+            background: hsl(240, 5%, 91%);
+            height: 1px;
+        }
+        @import "./hover";
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .img-box{
+        background-image: url("../images/illustration-box-desktop.svg");
+        background-repeat: no-repeat;
+        width: 151px;
+        height: 114px;
+        position: absolute;
+        top: 370px;
+        left: 145px;
+        z-index: 4;
+    }
+    .card{
+        @include centerFlex(row);
+        width: fit-content;
+        overflow: hidden;
+        .img1{
+            background-image: url("../images/illustration-woman-online-desktop.svg");
+            background-repeat: no-repeat;
+            width: 855px;
+            height: 360px;
+            position: absolute;
+            top: 69px;
+            left: -85px;
+            z-index: 2;
+        }
+        .img2{
+            display: none;
+        }
+        .img3{
+            background-image: url(../images/bg-pattern-desktop.svg);
+            background-repeat: no-repeat;
+            width: 108%;
+            height: 160%;
+            position: absolute;
+            top: -292px;
+            left: -568px;
+            z-index: 1;
+        }
+    }
+    .content{
+        z-index: 4;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 47px 90px 75px 469px;
+        .faq-header{
+            margin-block-end: 15px;
+        }
+        .q-n-a{
+            width: 410px;
+            span{
+                margin-left: 100px;
+            }
+            @import "./hover";
+
+            .answerstyle{ //this is for the the answer
+                display: block;
+            }
+            .paragraphstyle{
+                font-weight: bold;
+            }
+            .arrowstyle{
+                transform: rotate(180deg);
+            }
+            p{
+                margin: 0;
+                padding: 0;
+            }
+            span{
+                margin: 0;
+            }
+        }
+    }
+}

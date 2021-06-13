@@ -1,0 +1,294 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  width: 90%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.card .img1 {
+  background-image: url("../images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 185px;
+  position: absolute;
+  top: -107px;
+}
+
+.card .img2 {
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 185px;
+  position: absolute;
+  top: 0px;
+  right: -4px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-top: 117px;
+  margin-bottom: 40px;
+  width: 85%;
+}
+
+.content .faq-header {
+  font-weight: lighter;
+  color: #1d1e35;
+}
+
+.content .q-n-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0;
+  width: 100%;
+  color: #4a4b5e;
+}
+
+.content .q-n-a .question {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 13px 0;
+  position: relative;
+}
+
+.content .q-n-a .answer {
+  margin-top: 12px;
+  padding-right: 30px;
+  display: none;
+  color: #787887;
+}
+
+.content .q-n-a .arrow {
+  position: absolute;
+  top: 4px;
+  right: 12px;
+}
+
+.content .q-n-a hr {
+  width: 100%;
+  border: none;
+  background: #e7e7e9;
+  height: 1px;
+}
+
+.content .q-n-a #q1:hover {
+  cursor: pointer;
+}
+
+.content .q-n-a #q1:hover p {
+  color: #f47c57;
+}
+
+.content .q-n-a #q2:hover {
+  cursor: pointer;
+}
+
+.content .q-n-a #q2:hover p {
+  color: #f47c57;
+}
+
+.content .q-n-a #q3:hover {
+  cursor: pointer;
+}
+
+.content .q-n-a #q3:hover p {
+  color: #f47c57;
+}
+
+.content .q-n-a #q4:hover {
+  cursor: pointer;
+}
+
+.content .q-n-a #q4:hover p {
+  color: #f47c57;
+}
+
+.content .q-n-a #q5:hover {
+  cursor: pointer;
+}
+
+.content .q-n-a #q5:hover p {
+  color: #f47c57;
+}
+
+@media screen and (min-width: 800px) {
+  .img-box {
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 114px;
+    position: absolute;
+    top: 370px;
+    left: 145px;
+    z-index: 4;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    overflow: hidden;
+  }
+  .card .img1 {
+    background-image: url("../images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    width: 855px;
+    height: 360px;
+    position: absolute;
+    top: 69px;
+    left: -85px;
+    z-index: 2;
+  }
+  .card .img2 {
+    display: none;
+  }
+  .card .img3 {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    width: 108%;
+    height: 160%;
+    position: absolute;
+    top: -292px;
+    left: -568px;
+    z-index: 1;
+  }
+  .content {
+    z-index: 4;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 47px 90px 75px 469px;
+  }
+  .content .faq-header {
+    -webkit-margin-after: 15px;
+            margin-block-end: 15px;
+  }
+  .content .q-n-a {
+    width: 410px;
+  }
+  .content .q-n-a span {
+    margin-left: 100px;
+  }
+  .content .q-n-a #q1:hover {
+    cursor: pointer;
+  }
+  .content .q-n-a #q1:hover p {
+    color: #f47c57;
+  }
+  .content .q-n-a #q2:hover {
+    cursor: pointer;
+  }
+  .content .q-n-a #q2:hover p {
+    color: #f47c57;
+  }
+  .content .q-n-a #q3:hover {
+    cursor: pointer;
+  }
+  .content .q-n-a #q3:hover p {
+    color: #f47c57;
+  }
+  .content .q-n-a #q4:hover {
+    cursor: pointer;
+  }
+  .content .q-n-a #q4:hover p {
+    color: #f47c57;
+  }
+  .content .q-n-a #q5:hover {
+    cursor: pointer;
+  }
+  .content .q-n-a #q5:hover p {
+    color: #f47c57;
+  }
+  .content .q-n-a .answerstyle {
+    display: block;
+  }
+  .content .q-n-a .paragraphstyle {
+    font-weight: bold;
+  }
+  .content .q-n-a .arrowstyle {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .content .q-n-a p {
+    margin: 0;
+    padding: 0;
+  }
+  .content .q-n-a span {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

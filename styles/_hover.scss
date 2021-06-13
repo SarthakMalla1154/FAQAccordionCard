@@ -1,0 +1,22 @@
+@mixin hoverProperty {
+    cursor: pointer;
+    p{
+        color: hsl(14, 88%, 65%);
+    }
+}
+
+#q1:hover{
+    @include hoverProperty();
+}
+#q2:hover{
+    @include hoverProperty();
+}
+#q3:hover{
+    @include hoverProperty();
+}
+#q4:hover{
+    @include hoverProperty();
+}
+#q5:hover{
+    @include hoverProperty();
+}
